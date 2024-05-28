@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIDEBAR練習</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    </head>
+<body>
+
+ <div class="container-all">
+
+    <!-- 左邊 -->
+    <div class="container-left">
+        <!-- 導覽列 -->
+        <nav id="sidebar">
+            <!-- 展開/縮起來 按鈕 -->
+            <button type="button" id="collapse" class="collapse-btn">
+                <i class="fas fa-align-left"></i>
+            </button>
+
+            <!-- List 列表 -->
+            <ul class="list-unstyled">
+                <p>百翔的履歷</p>
+                <li>
+                    <a href="/BOOT/SIDEBAR/Sidebar.html">首頁 HOME <i class="fas fa-home"></i></a>
+                </li>
+                <li>
+                    <a href="/BOOT/SIDEBAR/Sidebar2.html">關於 <i class="fab fa-youtube"></i></a>
+                </li>
+                <li>
+                    <a href="#sublist" data-bs-toggle="collapse" id="dropdown">作品 <i class="fas fa-briefcase"></i></a>
+                    <!-- 子連結列表 --> 
+                    <ul id="sublist" class="list-unstyled collapse">
+                        <li>
+                            <a href="/BOOT/SIDEBAR/Sidebar3.html">SCRATCH</a>
+                        </li>
+                        <li>
+                            <a href="#">ASP.NET CORE MVC</a>
+                        </li>                        
+                    </ul>
+                </li>
+                <!-- <li>
+                    <a href="#">作業 <i class="far fa-file-video"></i></a>
+                </li> -->
+            </ul>
+
+        </nav>
+    </div>
+
+    <!-- 右邊 -->
+    <div class="container-right">
+        <div class="container-fluid">
+          
+          <div class="row">
+            <div class="col-sm-3">
+
+            </div>
+            <div class="col-sm-9">
+
+            </div>
+          </div>
+          
+          
+          <div class="container-intro text-center">
+               <div class="row">                   
+                    <div class="col-sm-4">
+                        <div class="row">
+                            <div class="col-sm-12" style="padding: 35px;">
+                                <h2 style="text-align: left;">學歷</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-1">
+                                <div class="time-line-section">
+                                    <div class="time-dot"><i class="fa-solid fa-school"></i></div>
+                                    <div class="tine-line"></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-11" style="text-align: left;display: flex;">
+                                <div class="c1">
+                                    <h3>國立臺灣海洋大學</h3>
+                                    <p>
+                                        <span>電機工程學系 &nbsp;&nbsp;•&nbsp;&nbsp;</span>
+                                        <span style="color: #888;">2011/9~2014/9</span>
+                                    </p>
+                                </div>                                
+                                <div class="c2">
+                                    <img src="../PIC/海大.png" alt="海大" style="width:50px;height:50px;padding: 10px;">
+                                </div>                       
+                            </div>                 
+                        </div>              
+                        <div class="row">
+                            <div class="col-sm-1">
+                                <div class="time-line-section">
+                                    <div class="time-dot"><i class="fa-solid fa-school"></i></div>
+                                    <div class="tine-line"></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-11" style="text-align: left;display: flex;">
+                                <div class="c1">
+                                    <h3>國立中山大學</h3>
+                                    <p>
+                                        <span>電機工程學系 &nbsp;&nbsp;•&nbsp;&nbsp;</span>
+                                        <span style="color: #888;">2015/7~2019/6</span>
+                                    </p>
+                                </div>
+                                <div class="c2">
+                                    <img src="../PIC/中山.png" alt="中山" style="width:50px;height:50px;padding: 10px;">
+                                </div>                        
+                            </div>                 
+                        </div>
+                    </div>
+                    
+
+                    <div class="col-sm-4">
+                        <div class="row">
+                            <div class="col-sm-12" style="padding: 35px;">
+                                <h2 style="text-align: left;">工作經歷</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-1">
+                                <div><i class="fa-solid fa-school"></i></div>
+                            </div>
+                            <div class="col-sm-11" style="text-align: left;display: flex;">
+                                <div class="row">
+                                    <div class="col-sm-10">
+                                        <h3>客服工程師</h3>
+                                        <p>
+                                            <span>杏翔股份有限公司 &nbsp;&nbsp;•&nbsp;&nbsp;</span>
+                                            <span style="color:#888;">2021/1~Present</span>                                            
+                                        </p>
+                                        <ul>
+                                            <li>線上客服</li>
+                                            <li>醫療系統的維護與開發</li>
+                                            <li>協助診所和衛生所的系統上線</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <img src="../PIC/THESE.png" alt="杏翔股份有限公司" style="width:50px;height:50px;"/>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-sm-4" style="margin-top: 50px;">                    
+                        <!-- 基本資料 -->
+                        <table class="table" style="width:55vh;margin-bottom: 50px;">
+                        <!-- <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>  -->
+                        <tbody>
+                            <tr>
+                                <th scope="row">個人簡介</th>
+                                <td>男 30歲 役畢</td>                    
+                            </tr>
+                            <tr>
+                                <th scope="row">手機</th>
+                                <td>0910952759</td>                    
+                            </tr>
+                            <tr>
+                                <th scope="row">E-mail</th>
+                                <td>imxp660@gmail.com</td>                    
+                            </tr>
+                            <tr>
+                                <th scope="row">通訊地址</th>
+                                <td>桃園市桃園區成功里桃一街69-1號</td>                    
+                            </tr>
+                            <tr>
+                                <th scope="row">駕駛執照</th>
+                                <td>普通重型機車駕照、普通小型車駕照</td>                    
+                            </tr>
+                        </tbody>
+                        </table>  
+                    </div>
+                </div>                
+          </div>
+         
+        
+          <div class="card">
+            <div class="card-body">
+                <h5 style="text-align: left;font-weight:bold;">工作經歷</h5>
+                <div class="card-text" style="text-align: left;">
+                    退伍後，我到位於內湖的杏翔公司就職，公司本身是做醫療相關的軟體的服務，
+                    入職後我是擔任客服工程師，主要先從接客服電話開始學起，公司的客戶群主要是針對一般診所的業務
+                    在與客戶的電話中漸漸熟悉系統的操作流程還有診所的相關業務，
+                    之後也有一些出差上線的經驗，除了協助診所建立院內醫令和醫師範本、檢驗儀器的介接和報告的收發、
+                    還有每個月健保申報的作業
+                    並針對較常見的問題製作系統的操作手冊方便之後的維護，也提供線上課服讓診所端有問題能夠得到及時解決<br/>
+
+                    在就職期間公司也接了一個新北衛生所的專案，                    
+                    於是開始針對衛生所的需求，去針對診所系統進行修改，
+                    並依據衛生所的掛號需求進行程式方面的調整，還有一些客製化報表的製作、跟疫苗的維護作業，
+                    然後開始了長達一年的上線過程，配合公司的安排，有的時候會出差協助系統上線，
+                    到現場確認確認儀器都能傳到系統，讀卡機跟印收單都有正常運作，確保醫護人員都能正常使用系統，
+                    有的時候則會留守公司負責線上客服的任務，並有需要會協助幫忙更新程式至伺服器，
+                    在這段期間我也學習了聆聽客戶的需要，
+                    並願意花時間聆聽和處理問題，讓我學會盡責跟願意付出的功課。                
+                </div>
+            </div>
+          </div>
+         
+
+        </div>                   
+    </div>
+ </div>
+</body>
+</html>
