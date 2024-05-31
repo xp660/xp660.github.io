@@ -1,0 +1,106 @@
+.body{
+    width: 100%;
+    height: 100%;
+    background-color: lavender;
+}
+.container-all{
+    display: flex;
+    
+    align-items: stretch;
+}
+
+#sidebar{
+    width: 300px;
+    height: 100vh;
+    background-color: indigo;
+    color: white;
+    transition: 1s;
+}
+
+#sidebar.active{
+    margin-left: -250px;
+}
+
+
+
+#sidebar p{
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+    padding: 10px;
+}
+
+#sidebar ul li a{
+    padding: 10px;
+    font-size: 20px;
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+#sidebar ul li a:hover{
+    color: indigo;
+    background-color: #fff;
+}
+
+.fas,
+.fab,
+.far{
+    float: right;
+}
+
+ul ul li a{
+    background-color: rgb(203,142,247);
+    font-size: 20px;
+    font-style: italic;
+
+}
+
+
+
+.container-right{
+    background-color: lavender;
+    width: 100%;
+    height: 100vh;
+
+    text-align: center;
+    padding: 30px;
+}
+
+.collapse-btn{
+    position: relative;
+    top: 1%;
+    left: 250px;
+    background-color: indigo;
+    color: white;
+    border: none;
+    font-size: 30px;
+    padding: 5px;
+}
+
+.collapse-btn:hover{
+    background-color: rgb(120,5,203);
+    transition: 0.4s;
+}
+
+
+@media(max-width:600px){
+    #sidebar{
+        margin-left: -110px;
+        width: 150px;
+        font-size: 20px;
+    }
+    .collapse-btn{
+        position: relative;
+        top: 1%;
+        left: 110px;
+    }
+    #sidebar.active{
+        margin-left: 0px;
+    }
+    #sidebar ul p{
+        font-size: 18px;
+        text-align: left;  
+        color: indigo;      
+    }
+   
+}

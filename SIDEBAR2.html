@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIDEBAR練習</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+</head>
+<body>
+    <div class="container-all">
+        <div class="container-left">
+            <nav id="sidebar">
+                <button id="collapse" class="collapse-btn">
+                    <i class="fas fa-align-left"></i>
+                </button>
+
+                <ul class="list-unstyled">
+                    <p>百翔的履歷</p>
+                    <li>
+                        <a href="/BOOT/SIDEBAR/Sidebar.html">首頁 HOME <i class="fas fa-home"></i></a>
+                    </li>
+                    <li>
+                        <a href="/BOOT/SIDEBAR/Sidebar.html">關於 <i class="fab fa-youtube"></i></a>
+                    </li>
+                    <li>
+                        <a href="#sublist" data-bs-toggle="collapse" id="dropdown">作品 <i class="fas fa-briefcase"></i></a>
+                        <!-- 子連結列表 --> 
+                        <ul id="sublist" class="list-unstyled collapse">
+                            <li>
+                                <a href="/BOOT/SIDEBAR/Sidebar3.html">SCRATCH</a>
+                            </li>
+                            <li>
+                                <a href="#">ASP.NET CORE MVC</a>
+                            </li>                        
+                        </ul>
+                    </li>
+                </ul>
+            </nav> 
+        </div>
+        <div class="container-right">
+            <div class="container mt-10">               
+                <h2 style="text-align: left;">工作技能</h2>
+                <div style="border-top:3px solid blue;width:150px;margin: 5px;"></div>    
+                <div class="row" style="margin-top: 30px;">
+                    <div class="col-10" style="text-align: left;">
+                        <h4>【工作內容】</h4>
+                        <ul class="list-group list-unstyled">                         
+                            <li class="list-group-item"><strong>ASP.NET WinFrom：</strong>HIS系統介面和功能採用WinFrom進行開發</li>                           
+                            <li class="list-group-item"><strong>Team Foundation Server：</strong>使用TFS進行程式版控</li>          
+                            <li class="list-group-item"><strong>EXCEL：</strong>製作整理EXCEL報表</li>
+                            <li class="list-group-item"><strong>MYSQL：</strong>資料庫的查找和更新</li>
+                            <li class="list-group-item"><strong>RDLC：</strong>使用.NET框架的報告生成工具RDLC製作診所相關報表</li>                                         
+                        </ul>
+                    </div>                
+                </div>
+                <div class="row" style="margin-top: 30px;">
+                    <div class="col-10" style="text-align: left;">
+                        <h4>【基礎語言與框架】</h4>
+                        <ul class="list-group list-unstyled">                         
+                            <li class="list-group-item">VB.NET 、 C# ASP.NET</li>
+                            <li class="list-group-item">ASP.NET Web From、ASP.NET MVC、ASP.NET CORE MVC</li>
+                            <li class="list-group-item">GIT、Linux、MYSQL、MSSQL</li>
+                            <li class="list-group-item">HTML、CSS、Javascript、jQuery、Bootstrap</li>
+                        </ul>
+                    </div>                
+                </div>
+                <div class="row" style="margin-top: 30px;">
+                    <div class="col-10" style="text-align: left;">
+                        <h4>【服務學習】</h4>
+                        <ul class="list-group list-unstyled">                         
+                            <li class="list-group-item">教會課輔班程式小老師</li>
+                            <li class="list-group-item">擔任教會敬拜團的音控、投影片同工</li>
+                            <li class="list-group-item">大學熱舞社成員</li>
+                            <li class="list-group-item">擔任過高職電子學、高中數學家教</li>
+                        </ul>
+                    </div>                
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
