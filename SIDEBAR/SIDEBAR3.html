@@ -116,17 +116,17 @@
     </div>
 
     <script>
-        document.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', (event) => {
-                // 確保 href 是相對路徑
-                if (link.getAttribute('href').startsWith('./')) {
-                    event.preventDefault();
-                    // 自行處理邏輯而不改變 href
-                    // 例如
-                    window.location.href = link.getAttribute('href');
-                }
-            });
-        });
+      document.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', (event) => {
+        // 確保 href 是相對路徑
+        if (link.getAttribute('href').startsWith('/')) {
+            event.preventDefault();
+            // 自行處理邏輯而不改變 href
+            // 例如
+            window.location.href = link.getAttribute('href');
+        }
+    });
+});
         
         </script>
 </body>
